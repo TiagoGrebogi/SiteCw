@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'SomeTimeLaterRegular';
+}
+
+.header-inner-content {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px #333;
+    z-index: 99;
+}
+
+.navbar > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    color: #fdc323;
+    text-shadow: 5px black;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-icons-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icons-container img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.header-inner-content img:first-child {
+    margin-right: 1rem;
+}
+
+.navigation ul li {
+    color: #fdc323;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.navigation ul li:hover {
+    transition: .2s;
+    transform: scale(1.2);
+    font-weight: bold;
+}
+
+.menu-button {
+    display: none;
+}
+
+header {
+    background-image: radial-gradient(#fff, #949494);
+}
+
+.header-content {
+    font-family:Helvetica;
+}
+
+.header-bottom-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.header-bottom-side-left {
+    height: 100%;
+    flex-basis: 50%;
+}
+
+.header-bottom-side-left h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Montserrat';
+}
+
+.header-bottom-side-left p {
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Montserrat';
+}
+
+.header-bottom-side-left button {
+    font-family: 'Montserrat';
+    background-color: #fdc323;
+    border: none;
+    border-radius: 9999px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: .8rem 3.8rem;
+    font-size: 1.2rem;
+    transition: .2s;
+}
+
+.header-bottom-side-left button:hover {
+    transition: .2s;
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.header-bottom-side-right {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bottom-side-right img {
+    width: 115%;
+}
+
+@media (max-width: 800px) {
+    .logo{
+        font-size: 1.2rem;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .header-bottom-side{
+        flex-direction: column;
+        text-align: center;
+        padding-top: 4rem;
+    }
+
+    nav {
+        position: absolute;
+        background-color: #333;
+        width: 100%;
+        top: 46px;
+        display: none;
+    }
+
+    .show-menu nav{
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: .8rem;
+    }
+}
+
+.gray-background {
+    background-color: #333;
+}
+
+.page-inner-content {
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.cols {
+    display: flex;
+    width: rem;
+    padding: 4rem 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+}
+
+.cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.camiseta1 {
+    width: 14rem;
+    height: 16rem;
+}
+.camiseta2 {
+    width: 500rem;
+    height: 16rem;
+}
